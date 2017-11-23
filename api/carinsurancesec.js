@@ -12,7 +12,7 @@ module.exports.apply = (event, context, callback) => {
     const response = {
         statusCode: 200,
         body: JSON.stringify({
-            message: 'Contract ' + contractNumber1 + contractNumber2 + contractNumber3 + ' has been created, your premium will be ' + quote + ' EUR.',
+            message: 'Contract ' + contractNumber1 + contractNumber2 + contractNumber3 + ' has been created, your premium will be ' + quote + ' EUR. Please enjoy driving your ' + requestBody.model + '!!!',
             contractNumber: contractNumber1+contractNumber2+contractNumber3,
             quote: quote,
             make: requestBody.make,
