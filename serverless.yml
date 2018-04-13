@@ -37,3 +37,19 @@ functions:
           - http:
               path: carinsurancesec
               method: post
+  carinsuranceQuoteText:
+        handler: api/carinsurancetext.quote
+        memorySize: 128
+        description: Recieve a quote for carinsurance
+        events:
+          - http:
+              path: carinsurancetext
+              method: post
+  carinsuranceApplyText:
+          handler: api/carinsurancesectext.apply
+          memorySize: 128
+          description: Apply for carinsurance
+          events:
+            - http:
+                path: carinsurancesectext
+                method: post
